@@ -14,16 +14,15 @@ function PokemonCard({pokemon}) {
             <img src={ pokemon.imgSrc } alt="" className="cardImg" />
             : <p>"???"</p>
         }
-        <figcaption>Bulbasaur</figcaption>     
-    </figure>
-    
+        <figcaption>{pokemon.name}</figcaption>     
+    </figure>    
 )}
 
 PokemonCard.propTypes = {
     pokemon: PropTypes.shape({
     name: PropTypes.string.isResquired,
     imgSrc: PropTypes.string,
-    
+
     }).isResquired
 };
 

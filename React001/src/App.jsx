@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 import PokemonCard from "./components/PokemonCard";
 
 const pokemonList = [
@@ -18,5 +19,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App
