@@ -18,3 +18,19 @@
   border-radius: inherit;
   box-shadow: inherit;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(215, 37, 10);
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}

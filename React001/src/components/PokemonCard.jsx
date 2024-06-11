@@ -8,15 +8,16 @@ function PokemonCard({pokemon}) {
     
     console.log(pokemon);
     return (
+        <div className="box1">
     <figure className="card">       
         {
             pokemon.imgSrc?
-            <img src={ pokemon.imgSrc } alt="" className="cardImg" />
+            <img src={ pokemon.imgSrc } alt={pokemon.name} className="cardImg" />
             : <p>"???"</p>
         }
-        <figcaption>Bulbasaur</figcaption>     
+        <figcaption>{pokemon.name}</figcaption>     
     </figure>
-    
+    </div>   
 )}
 
 PokemonCard.propTypes = {
