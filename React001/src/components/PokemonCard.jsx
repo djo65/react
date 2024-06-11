@@ -2,26 +2,16 @@ import  "./MyComponent.css"
 
 
 
-const pokemonList = [
-    {
-      name: "bulbasaur",
-      imgSrc:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-    },
-    {
-      name: "mew"
-    },
-  ];
 
 
-function PokemonCard() {
-    const pokemon = pokemonList[1]
+function PokemonCard({pokemon}) {
+    
     console.log(pokemon);
     return (
     <figure className="card">       
         {
             pokemon.imgSrc?
-            <img src={ pokemon.imgSrc } alt="" />
+            <img src={ pokemon.imgSrc } alt="" className="cardImg" />
             : <p>"???"</p>
         }
         <figcaption>Bulbasaur</figcaption>     
